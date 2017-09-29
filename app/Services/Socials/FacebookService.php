@@ -17,7 +17,7 @@ class FacebookService extends SocialService
         $this->social = new Facebook([
             'app_id' => "APP_ID", // 
             'app_secret' => "APP_SECRET",
-            'default_graph_version' => config('services.facebook.default_graph_version'),
+            'default_graph_version' => 'v2.10',
         ]);
 
         return $this;
