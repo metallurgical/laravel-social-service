@@ -30,7 +30,7 @@ class FacebookController extends Controller
 
         return response()->json([
             'token' => $jwtToken,
-            'data' => Auth::user()
+            'data' => auth()->user()
         ])->setStatusCode(201);
     }
 }
